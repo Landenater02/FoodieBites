@@ -1,0 +1,138 @@
+﻿@page
+@model FAQsModel
+@{
+    ViewData["Title"] = "FAQs";
+}
+<h1>@ViewData["Title"]</h1>
+<script>
+   $(document).ready(function() {
+  $('.faq-item').click(function() {
+   $(this).find(':nth-child(2)').eq(2).slideToggle("slow", "linear");
+  });
+});
+
+   
+</script>
+<a class="faq-accordian"> 
+
+     <a class="faq-item" href="#"><div class="faq-top">
+        
+        <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">How can I place an order on your website?</div>
+       
+        </div> <div class="faq-answer">To place an order, simply browse our menu, select the items you want, and proceed to the checkout page. Follow the prompts to provide your delivery details and complete the payment process.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+        <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">What are your accepted payment methods?</div>
+        </div> <div class="faq-answer">We accept payments through major credit cards, debit cards, and online payment platforms such as PayPal and Apple Pay.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+       <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">Do you offer international shipping?</div>
+        </div> <div class="faq-answer">Currently, we only offer domestic shipping within [your country/region]. We do not provide international shipping at this time.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+        <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">Can I customize my order or make special requests?</div>
+        </div> <div class="faq-answer">Certainly! We strive to accommodate special requests whenever possible. Please mention your specific requirements in the order notes section during checkout, and we will do our best to fulfill them.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+       <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">What is your return or refund policy?</div>
+        </div> <div class="faq-answer">We have a 7-day return and refund policy. If you are not satisfied with your order, please contact our customer support within 7 days of receiving your order, and we will assist you with the return and refund process.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+       <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">Are the ingredients used in your recipes locally sourced?</div>
+        </div> <div class="faq-answer">Yes, we prioritize sourcing fresh and local ingredients for our recipes whenever possible. We believe in supporting local farmers and businesses while ensuring the highest quality for our customers.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+       <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">Can I track my order once it's been shipped?</div>
+        </div> <div class="faq-answer">Yes, once your order has been shipped, you will receive a tracking number via email or SMS. You can use this tracking number to monitor the progress of your delivery on our website or the courier's tracking portal.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+       <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+        <div class="faq-question">Do you offer nutritional information for your menu items?</div>
+        </div> <div class="faq-answer">Yes, we provide detailed nutritional information for our menu items. You can find this information on our website or by contacting our customer support team. We understand the importance of transparency when it comes to dietary choices and requirements.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+        <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">Can I make changes to my order after it has been placed?</div>
+        </div> <div class="faq-answer">Once an order has been placed, it may not be possible to make changes. However, please contact our customer support team as soon as possible with your order details, and we will do our best to accommodate your request if the order has not yet been processed or shipped.</div>
+    </a>
+
+     <a class="faq-item" href="#"><div class="faq-top">
+        <svg width="125" height="112" viewBox="0 0 125 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M108.317 64.9233L113.62 70.2266L124.227 59.62L118.923 54.3167L108.317 64.9233ZM67.3033 2.69671C64.3744 -0.232227 59.6256 -0.232227 56.6967 2.69671C53.7678 5.62564 53.7678 10.3744 56.6967 13.3033L67.3033 2.69671ZM118.923 54.3167L67.3033 2.69671L56.6967 13.3033L108.317 64.9233L118.923 54.3167Z" fill="white"/>
+<path d="M5.38669 54.7567L0.0833856 60.06L10.69 70.6666L15.9933 65.3633L5.38669 54.7567ZM67.6133 13.7433C70.5422 10.8144 70.5422 6.06563 67.6133 3.1367C64.6844 0.207763 59.9356 0.207763 57.0067 3.1367L67.6133 13.7433ZM15.9933 65.3633L67.6133 13.7433L57.0067 3.1367L5.38669 54.7567L15.9933 65.3633Z" fill="white"/>
+</svg>
+
+
+
+        <div class="faq-question">Are there any discounts or promotions available?</div>
+        </div> <div class="faq-answer">Yes, we frequently offer discounts, promotions, and special deals. Stay updated by subscribing to our newsletter or following our social media channels to receive notifications about ongoing offers and exclusive discounts.</div>
+    </a>
+</div>

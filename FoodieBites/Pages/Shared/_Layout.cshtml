@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - FoodieBites</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/FoodieBites.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm  border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="navigation-bar" >
+                <a class="navigation-bar" asp-area="" asp-page="/Index">FoodieBites</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-page="/Forums/Index">Recipes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " asp-area="" asp-page="/FAQs">Faqs</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer ">
+        <section id="contact" class="section contact-section">
+            <div class="footer-flex">
+  <h2 class="section-title">Related Links</h2>
+
+   <ul>
+      <li><a href="https://www.foodnetwork.com/" target="_blank" rel="noopener noreferrer">Food Network</a></li>
+      <li><a href="https://www.allrecipes.com/" target="_blank" rel="noopener noreferrer">Allrecipes</a></li>
+      <li><a href="https://www.epicurious.com/" target="_blank" rel="noopener noreferrer">Epicurious</a></li>
+      <li><a href="https://www.bonappetit.com/" target="_blank" rel="noopener noreferrer">Bon Appétit</a></li>
+      <li><a href="https://www.seriouseats.com/" target="_blank" rel="noopener noreferrer">Serious Eats</a></li>
+    </ul>
+    </div>
+  <div class="contact-info">
+      <h3>Contact Us</h3>
+
+      <ul>
+        <li><strong>Email:</strong> info@foodiebites.com</li>
+        <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+        <li><strong>Address:</strong> 123 Main Street, City, State, ZIP</li>
+      </ul>
+    </div>
+
+  <div class="section-content">
+  
+
+    
+    <div class="social-links">
+      <h3>Follow Us</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/foodiebites" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+        <li><a href="https://www.instagram.com/foodiebites" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.twitter.com/foodiebites" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

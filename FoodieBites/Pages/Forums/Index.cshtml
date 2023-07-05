@@ -1,0 +1,50 @@
+﻿@page
+@model FoodieBites.Pages.Forums.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Recipes</h1>
+
+    <a asp-page="Create"><div class="btn btn-primary">
+Make A Recipe
+</div>
+</a>
+
+<div class="recipes">
+@foreach (var item in Model.Forum) {
+
+    <a asp-page="./Details" asp-route-id="@item.Id">
+        
+       <div class="recipe-item">
+           <div class="flip-inner">
+               <div class="flip-front">        <img src=@Html.DisplayFor(modelItem => item.imageurl)>
+            
+                <h3 class="title">@Html.DisplayFor(modelItem => item.Title)</h3>
+
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="8" r="2" fill="#D9D9D9" />
+                    <circle cx="8" cy="18" r="2" fill="#D9D9D9" />
+                    <circle cx="18" cy="18" r="2" fill="#D9D9D9" />
+                    <path d="M1 23H23V1" stroke="#D9D9D9" stroke-linecap="round" />
+                </svg>
+                </div>
+                <div class="flip-back">
+                        <h2>@Html.DisplayFor(modelItem => item.Title)</h2>
+                        <p>@Html.DisplayFor(modelItem => item.MealType)</p>
+                        <p>@Html.DisplayFor(modelItem => item.Description)</p>
+
+
+                </div>
+
+                </div>
+
+
+        </div>
+                 </a> 
+                
+        
+}
+   </div>
+</>

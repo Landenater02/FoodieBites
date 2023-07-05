@@ -1,0 +1,70 @@
+﻿@page
+@model FoodieBites.Pages.Forums.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Forum</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Forum.Id" />
+            <div class="form-group">
+                <label asp-for="Forum.imageurl" class="control-label"></label>
+                <input asp-for="Forum.imageurl" class="form-control" />
+                <span asp-validation-for="Forum.imageurl" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.Title" class="control-label"></label>
+                <input asp-for="Forum.Title" class="form-control" />
+                <span asp-validation-for="Forum.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.PostDate" class="control-label"></label>
+                <input asp-for="Forum.PostDate" class="form-control" />
+                <span asp-validation-for="Forum.PostDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.MealType" class="control-label"></label>
+                <input asp-for="Forum.MealType" class="form-control" />
+                <span asp-validation-for="Forum.MealType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.Price" class="control-label"></label>
+                <input asp-for="Forum.Price" class="form-control" />
+                <span asp-validation-for="Forum.Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.Description" class="control-label"></label>
+                <input asp-for="Forum.Description" class="form-control" />
+                <span asp-validation-for="Forum.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.ingredients" class="control-label"></label>
+                <input asp-for="Forum.ingredients" class="form-control" />
+                <span asp-validation-for="Forum.ingredients" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Forum.instructons" class="control-label"></label>
+                <input asp-for="Forum.instructons" class="form-control" />
+                <span asp-validation-for="Forum.instructons" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

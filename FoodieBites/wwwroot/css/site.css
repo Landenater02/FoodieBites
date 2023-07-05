@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+html {
+
+}
+
+@font-face {
+    font-family: 'Calluna';
+    src: url('Fonts/calluna-regular.otf');
+    /* Additional font-face properties (e.g., font-weight, font-style) can be specified here */
+}
+
+
+body {
+    font-family: 'Calluna' sans-serif,Times New Roman, Times, Baskerville, Georgia, serif;
+}
+@media (min-width: 768px) {
+  html {
+    
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-feature-settings: "lnum";
+    -moz-font-feature-settings: "lnum";
+    -webkit-font-feature-settings: "lnum";
+}
+
+body {
+    
+    background: #faf6e8;
+    font-family: acumin-pro,sans-serif;
+}
+a{
+    text-decoration:none;
+}
+img{
+    height:20rem;
+}
+nav, .navigation-bar, nav .navbar-nav {
+    background-color: #7da285;
+    color: white;
+}
+.recipe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: .5rem;
+    margin: .5rem;
+    background-color: white;
+    overflow: hidden;
+    width: max-content;
+    perspective: 1000px; 
+}
+.recipe-item h3,.recipe-item p{
+    
+    color:black;
+   
+
+}
+
+.recipes 
+{
+    display:flex;
+   
+    flex-wrap:wrap;
+
+}
+.recipes svg{
+    align-self:flex-end;
+}
+
+
+.flip-back {
+    opacity: 0;
+    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    width:80%;
+}
+.flip-front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s all ease;
+}
+.recipe-item:hover .flip-front {
+    transform: rotateY(90deg);
+    transition: .3s all ease;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+.recipe-item:hover .flip-back {
+    
+    transition: 1s all ease;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    opacity: 1;
+}
+.flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display:flex;
+    flex-direction: column;
+   justify-content:center;
+   align-items:center;
+}
+.flip-back h2
+{
+    color:black;
+}
+.flip-back p{
+    
+    margin:0;
+}
+
+.instructions{
+    width:80%;
+    margin:auto;
+    text-align:center;
+    background:white;
+}
+
+.greeting
+{
+    padding:1rem;
+}
+.ingredients, .steps{
+  text-align:left;
+  width:fit-content;
+  margin:3rem auto;
+}
+.ingredients li, .steps li
+{
+    padding:.5rem;
+}
+.btn-primary
+{
+    width:fit-content;
+    
+}
+.btn a 
+{
+    color: white;
+}
+.faq-top {
+    background-color: #7da285;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    height: 3rem;
+    border-top: 1px solid #8ba691; 
+}
+.faq-item svg {
+    width: 2rem;
+    transform: rotateX(180deg);
+}
+.faq-item, .faq-item:hover {
+    color: white;
+}
+
+
+.faq-question{
+   flex:.80;
+   
+}
+
+.faq-top:hover, .faq-top:focus, .faq-bottom:hover {
+    background: #8aab91;
+    text-decoration:none;
+    color:white;
+}
+.faq-answer {
+    display: none;
+  
+    background: #6c8c73;
+    padding: 2rem;
+}
+article a
+{
+    display:flex;
+    justify-content:center;
+   
+}
+
+article{
+    margin:2rem;
+}
+.welcome-text{
+    margin:2rem;
+}
+.text-center p{
+   
+}
+.navigation-bar
+{
+    margin-left:3rem;
+    flex:4;
+    font-size:2rem;
+}
+
+.nav-link{
+    color:white;
+    font-size:1.5rem;
+    margin: 0 1rem;
+}
+
+/*typography styles*/
+
+h1 {
+    font-size: 2.125rem;
+    font-weight: bold;
+    font-family: 'Calluna', sans-serif;
+    line-height: 2.56rem;
+}
+h2 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    font-family: 'Calluna', sans-serif;
+    line-height: 2.375rem;
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Calluna', sans-serif;
+    line-height: 1.75rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    font-family: 'Calluna', sans-serif;
+    line-height:1.75rem;
+}
+h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    font-family: 'Calluna', sans-serif;
+    line-height: 1.25rem;
+}
+h6, p {
+    font-size: 1rem;
+    font-family: 'Lato';
+    line-height: 1.5rem;
+}
+a {
+    font-family: 'Calluna', sans-serif;
+}
+.flex-section
+{
+    display:flex;
+    flex-direction:column;
+}
+.flex-row{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+a {
+    color: #814C9E;
+}
+.btn-primary {
+    background: #814C9E;
+}
+
+a:hover, .nav-link:hover, .nav-link:focus {
+    color: #562E75;
+}
+.btn-primary:hover {
+    background:#562E75;
+}
+footer .section,.section-content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+footer {
+    background: #7da285;
+    color:black;
+    
+}
+footer a{
+    text-decoration:underline;
+
+}
+footer a:hover{
+    text-decoration:none;
+}
+footer ul li{
+    list-style:none;
+}
+footer ul{
+    padding:0;
+    
+}

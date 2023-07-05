@@ -1,0 +1,85 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="">Welcome to Foodie Bites!</h1>
+
+<p class="welcome-text">Satisfy your culinary cravings and embark on a delightful journey through the flavors of the world. At Foodie Bites, we're dedicated to bringing you a delectable collection of recipes, culinary inspiration, and a vibrant community of food enthusiasts.
+
+Indulge your taste buds with our extensive repertoire of mouthwatering recipes. From exotic international dishes to comforting homemade favorites, we have a diverse range of culinary creations to cater to every palate and occasion. Whether you're a novice in the kitchen or a seasoned pro, our step-by-step recipes will guide you towards creating culinary masterpieces.
+
+Get ready to explore our blog, a treasure trove of food knowledge and inspiration. Discover the latest trends, cooking techniques, and tips shared by our passionate team of food experts. Dive into captivating stories, chef interviews, and behind-the-scenes glimpses into the culinary world, igniting your passion for all things food.
+
+Foodie Bites isn't just a website – it's a thriving community of food lovers. Join fellow foodies from around the globe, connect with like-minded individuals, and exchange ideas and experiences. Share your own culinary triumphs, seek advice, and celebrate the joy of cooking together.
+
+We believe that food brings people together, and we're excited to embark on this culinary adventure with you. 
+Prepare to tantalize your senses, unleash your creativity in the kitchen, and create unforgettable memories one bite at a time.
+</p>
+<p class="welcome-bottom">Welcome to Foodie Bites, where every bite is a flavorful delight!
+
+Bon appétit!
+</p>
+<p>
+-The Foodie Bites Team
+</p>
+
+<section class="flex-section">
+    <h2>Featured Recipes</h2>
+    <div class="flex-row">
+    <article>
+        <a asp-page="/Forums/Details" asp-route-id="1">
+        <div class="recipe-item">
+           <div class="flip-inner">
+               <div class="flip-front">        <img src=https://www.thecountrycook.net/wp-content/uploads/2021/03/Veggie-Pizza.jpg>
+            
+                <h3 class="title">Veggie Pizza</h3>
+
+                
+                </div>
+                <div class="flip-back">
+                        <h2>Veggie Pizza</h2>
+                        <p>Dinner</p>
+                        <p>Veggie Pizza is a delicious and colorful dish that features a crispy pizza crust topped with a variety of fresh vegetables and melted cheese. This recipe allows for customization, so feel free to add your favorite veggies and make it your own!</p>
+
+
+                </div>
+
+                </div>
+
+
+        </div>
+                 </a> 
+        <a href="/Forums/Details?id=1">Read More</a>
+    </article>
+    <article>
+         <a asp-page="/Forums/Details" asp-route-id="4">
+        <div class="recipe-item">
+           <div class="flip-inner">
+               <div class="flip-front">        <img src="https://hips.hearstapps.com/hmg-prod/images/greek-salad-index-642f292397bbf.jpg?crop=0.502xw:1.00xh;0.250xw,0&amp;resize=1200:*">
+            
+                <h3 class="title">Greek Salad</h3>
+
+                </div>
+                <div class="flip-back">
+                        <h2>Greek Salad</h2>
+                        <p>Appetizer</p>
+                        <p>Greek Salad is a light and refreshing dish that features crisp vegetables, tangy feta cheese, and a flavorful dressing. This salad is packed with Mediterranean flavors and makes for a perfect side dish or light lunch option.</p>
+
+
+                </div>
+
+                </div>
+
+
+        </div>
+                 </a> 
+         <a asp-page="/Forums/Details" asp-route-id="4">Read More</a>
+    </article>
+    </div>
+</section>
+
+
+</div>

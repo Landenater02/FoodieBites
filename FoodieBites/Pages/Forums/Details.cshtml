@@ -1,0 +1,50 @@
+﻿@page
+@model FoodieBites.Pages.Forums.DetailsModel
+@using System;
+@using System.Text.RegularExpressions;
+@{
+    ViewData["Title"] = "Details";
+}
+@{
+    List<string> ingredients = Model.Forum.ingredients.Split("-").ToList();
+    List<string> instructions = Regex.Split(Model.Forum.instructons, @"\d+\.\s").Where(instruction => !string.IsNullOrWhiteSpace(instruction)).ToList();
+    ingredients.RemoveAt(0);
+    instructions.RemoveAt(0);
+}
+ <div class="instructions">
+     <div class="greeting">
+<h1> @Html.DisplayFor(model => model.Forum.Title)</h1>
+
+<img src=" @Html.DisplayFor(model => model.Forum.imageurl)" >
+<p>Price: $@Html.DisplayFor(model => model.Forum.Price)</p>
+<p> Occasion:  @Html.DisplayFor(model => model.Forum.MealType) </p>
+<p>@Html.DisplayFor(model => model.Forum.Description)</p>
+        <h2>Ingredients</h2>
+</div>
+<div class="ingredients">
+    
+<ul>
+    @foreach (var ingredient in ingredients)
+    {
+        <li>@ingredient</li>
+    }
+
+</ul>
+</div>
+
+    <h2>Instructions</h2>
+<div class="steps">
+        
+<ol>
+    @foreach (var step in instructions)
+    {
+        <li>@step</li>
+    }
+
+</ol>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Forum?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
+</div>
